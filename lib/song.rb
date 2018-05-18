@@ -30,7 +30,7 @@ class Song
     types = {}
 
     @@genres.each { |type|
-      if types[type] == nil
+      if types[type]
         types[type] = 1
       else
         types[type] += 1
