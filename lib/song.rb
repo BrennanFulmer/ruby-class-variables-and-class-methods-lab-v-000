@@ -22,11 +22,7 @@ class Song
     @@genres.uniq
   end
   
-  def self.artists
-    @@artists.uniq
-  end
-  
-  def self.genre_count
+    def self.genre_count
     types = {}
 
     @@genres.each { |type|
@@ -39,6 +35,12 @@ class Song
     
     types
   end
+  
+  def self.artists
+    @@artists.uniq
+  end
+  
+
   
   def self.artist_count
     singers = {}
