@@ -31,9 +31,9 @@ class Song
 
     @@genres.each { |type|
       if types[type]
-        types[type] = 1
-      else
         types[type] += 1
+      else
+        types[type] = 1
       end
     }
     
