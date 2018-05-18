@@ -44,10 +44,10 @@ class Song
     singers = {}
 
     @@artists.each { |musician|
-      if singers[musician] == nil
-        singers[musician] = 1
-      else
+      if singers[musician]
         singers[musician] += 1
+      else
+        singers[musician] = 1
       end
     }
     
